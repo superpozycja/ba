@@ -44,6 +44,13 @@ void ba_fprint(ba* b, FILE* stream, int prec) {
     }
 }
 
+void ba_xor(ba* a, ba* b) {
+    int len = a->len < b->len ? a->len : b->len;
+    for(int i = 0; i < len; i++) {
+        (a->val)[i] = (a->val)[i] ^ (b->val)[i];
+    }
+}
+
 void ba_free(ba* b) 
 {
     free(b->val);
