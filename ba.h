@@ -1,5 +1,3 @@
-/* copyright 2024 anna@superpozycja.net all right reserved  */
-
 #ifndef BA_H
 #define BA_H
 

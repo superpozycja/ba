@@ -40,7 +40,7 @@ ba* ba_from_hex(char* hex)
 void ba_fprint(ba* b, FILE* stream, int prec) {
     int len = (prec > b->len) || prec == 0 ? b->len : prec;
     for(int i = 0; i < len; i++) {
-        fprintf(stream, "%x", (b->val)[i]);
+        fprintf(stream, "%02x", (b->val)[i]);
     }
 }
 
